@@ -1,0 +1,91 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding-bottom: 120px;
+            min-height: 200vh;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+
+        #nav-links {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        #nav-links .nav-link {
+            display: flex;
+            align-content: center;
+            color: #ebecee; /* Your custom color */
+            font-weight: 600;
+        }
+        
+        #nav-links .nav-link:hover {
+            color: #ffffff;
+        }
+
+        #nav-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0c9c62;
+            padding: 0 40px;
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            background-color: #0c9c62;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 20px;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        #footer i,
+        #footer h6 { 
+            color: #ebecee;
+            margin: 0;
+        }
+
+        #footer-end i {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        #footer-end i:hover {
+            transform: scale(1.1) rotate(3deg);
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        #footer-middle {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #ebecee;
+            font-weight: 600;
+        }
+
+        #footer-end {
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+            gap: 5px;
+        }
+        
+        #footer-end h6 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .vertical-line {
+            border-left: thin solid #ebecee;
+            height: 80px;
+            opacity: 0.5;
+        }
