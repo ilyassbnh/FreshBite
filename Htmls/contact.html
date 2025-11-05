@@ -18,16 +18,26 @@
 
 <body>
     <!-- Navbar -->
-    <header id="navbar-placeholder"></header>
-    <div id="nav-div">
+    <nav class="navbar">
         <img src="../images/logo-removebg-preview.png" alt="Logo" class="logo">
-        <div id="nav-links">
-            <a class="nav-link" aria-current="page" href="home.html">Home</a>
-            <a class="nav-link" aria-current="page" href="galerie.html">Galerie</a>
-            <a class="nav-link" aria-current="page" href="menu.html">Menu</a>
-            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-        </div>
-    </div>
+        <ul id="nav-links">
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSideBar()"><img
+                    src="/images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Open menu"></li>
+        </ul>
+
+        <ul class="sideBar">
+            <li onclick="hideSideBar()"><img src="/images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="Close menu"></li>
+            <li><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+            <li><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
+            <li><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
+            <li><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
 
     <!-- Content -->

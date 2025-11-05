@@ -19,19 +19,20 @@
     <nav class="navbar">
         <img src="../images/logo-removebg-preview.png" alt="Logo" class="logo">
         <ul id="nav-links">
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
             <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
             <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
-            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
             <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
             <li class="menu-button" onclick="showSideBar()"><img
                     src="/images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Open menu"></li>
         </ul>
+
         <ul class="sideBar">
             <li onclick="hideSideBar()"><img src="/images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                     alt="Close menu"></li>
+            <li><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
             <li><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
             <li><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
-            <li><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
             <li><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -39,43 +40,55 @@
 
     <!-- Content -->
     <main>
-        <div class="rotating-plate-container">
-            <img src="../images/plate2.jpeg" alt="Rotating Plate of Food" class="rotating-plate">
-        </div>
 
-        <div class="content">
+    <div class="info-section">
+        <div class="info-image">
+            <div class="rotating-plate-container">
+                <img src="../images/plate2.jpeg" alt="Rotating Plate of Food" class="rotating-plate">
+            </div>
+        </div>
+        <div class="info-text">
             <h1>Welcome to FreshBite!</h1>
             <p>Where you can eat more and care less</p>
-            <div class="aboutUs">
-                <h2>About Us</h2>
-                <p>Welcome to FreshBite, your new home for healthy and modern cuisine, perfectly located in the heart of
-                    Rabat! We're passionate about proving that 'healthy' and 'delicious' can absolutely go hand-in-hand.
-                    We use only the freshest local Moroccan ingredients to create vibrant salads, hearty grain bowls,
-                    and refreshing juices. FreshBite is your go-to oasis for food that makes you feel as good as it
-                    tastes.</p>
-            </div>
         </div>
-        <h1>Menu du Jour</h1>
-        <div class="menuJour">
-            <div class="card">
-                <img src="../images/diet1-removebg-preview.png" alt="" srcset="">
-                <p>Carrot Plate </p>
-            </div>
-            <div class="card">
-                <img src="../images/Food_plate_for_weight_loss-removebg-preview.png" alt="" srcset="">
-                <p>Fish Plate</p>
-            </div>
-            <div class="card">
-                <img src="../images/Salad_bowl_vegetable_plate_plant____premium_image_-removebg-preview.png" alt=""
-                    srcset="">
-                <p>Salad Plate</p>
-            </div>
-            <div class="card">
-                <img src="../images/Healthy_Keto_Dite_Food_Plate_-removebg-preview.png" alt="" srcset="">
-                <p>High Calories Plate</p>
-            </div>
+    </div>
+
+    <div class="info-section reversed">
+        <div class="info-image">
+            <img src="../images/food photography, food styling, aloha, hawaii….jpeg" alt="Inside FreshBite restaurant" class="about-image">
         </div>
-    </main>
+        <div class="info-text">
+            <h2>About Us</h2>
+            <p>Welcome to FreshBite, your new home for healthy and modern cuisine, perfectly located in the heart of
+                Rabat! We're passionate about proving that 'healthy' and 'delicious' can absolutely go hand-in-hand.
+                We use only the freshest local Moroccan ingredients to create vibrant salads, hearty grain bowls,
+                and refreshing juices. FreshBite is your go-to oasis for food that makes you feel as good as it
+                tastes.</p>
+        </div>
+    </div>
+
+    <h1 class="menu-title">Menu du Jour</h1>
+    <div class="menuJour">
+        <div class="card">
+            <img src="../images/diet1-removebg-preview.png" alt="Carrot Plate">
+            <p>Carrot Plate </p>
+        </div>
+        <div class="card">
+            <img src="../images/Food_plate_for_weight_loss-removebg-preview.png" alt="Fish Plate">
+            <p>Fish Plate</p>
+        </div>
+        <div class="card">
+            <img src="../images/Salad_bowl_vegetable_plate_plant____premium_image_-removebg-preview.png"
+                alt="Salad Plate">
+            <p>Salad Plate</p>
+        </div>
+        <div class="card">
+            <img src="../images/Healthy_Keto_Dite_Food_Plate_-removebg-preview.png" alt="High Calories Plate">
+            <p>High Calories Plate</p>
+        </div>
+    </div>
+
+</main>
 
     <!-- Footer -->
     <div id="footer">

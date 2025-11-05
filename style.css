@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f4f4f4;
@@ -8,7 +11,6 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
 }
-
 body::-webkit-scrollbar {
     display: none;
 }
@@ -117,10 +119,6 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
 }
 
 .rotating-plate {
@@ -141,44 +139,81 @@ body::-webkit-scrollbar {
     }
 }
 
-.content {
-    text-align: center;
-    padding-top: 200px;
-    color: #FFF;
+.info-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 40px 20px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    margin: 20px;
-    padding: 20px;
+    color: #FFF;
 }
 
-.content p {
-    padding: 10px 50px;
+.info-section .info-image,
+.info-section .info-text {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.content h1 , h2 {
+.info-text {
+    text-align: left;
+}
+
+.info-text h1,
+.info-text h2 {
     font-size: 50px;
     font-family:'Segoe print', Tahoma, Geneva, Verdana, sans-serif;
     color: #9fc14c ;
+}
 
+.info-section.reversed {
+    flex-direction: row-reverse; 
 }
-.menuJour{
+
+.about-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-title {
+    font-size: 50px;
+    font-family:'Segoe print', Tahoma, Geneva, Verdana, sans-serif;
+    color: #9fc14c ;
+    text-align: center;
+}
+
+.menuJour {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
 }
-.card{
+
+.card {
     height: 200px;
     width: 200px;
     background-color: transparent;
-}
-main h1{
-    font-size: 50px;
-    font-family:'Segoe print', Tahoma, Geneva, Verdana, sans-serif;
-    color: #9fc14c ;
+    margin: 10px;
     text-align: center;
-}
-.card p {
     color: #ebecee;
-    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
 }
 
 .menu-button {
@@ -229,13 +264,22 @@ main h1{
 }
 
 @media (max-width: 800px) {
-  .hideOnMobile {
-    display: none;
-  }
+    .hideOnMobile {
+        display: none;
+    }
 
-  .menu-button {
-    display: block;
-  }
+    .menu-button {
+        display: block;
+    }
+
+    .info-section,
+    .info-section.reversed {
+        flex-direction: column;
+    }
+
+    .info-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
