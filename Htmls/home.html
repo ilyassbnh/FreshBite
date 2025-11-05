@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshBite - Home</title>
-    <!-- All CSS/JS links are identical to home.html -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -17,24 +16,66 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header id="navbar-placeholder"></header>
-    <div id="nav-div">
+    <nav class="navbar">
         <img src="../images/logo-removebg-preview.png" alt="Logo" class="logo">
-        <div id="nav-links">
-            <a class="nav-link" aria-current="page" href="home.html">Home</a>
-            <a class="nav-link" aria-current="page" href="galerie.html">Galerie</a>
-            <a class="nav-link" aria-current="page" href="menu.html">Menu</a>
-            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-        </div>
-    </div>
+        <ul id="nav-links">
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSideBar()"><img
+                    src="/images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Open menu"></li>
+        </ul>
+        <ul class="sideBar">
+            <li onclick="hideSideBar()"><img src="/images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="Close menu"></li>
+            <li><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
+            <li><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
+            <li><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+            <li><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
 
     <!-- Content -->
-    <div style="padding: 40px; max-width: 800px; margin: 20px auto; background: #fff; border-radius: 8px;">
-        <h1>Our Menu</h1>
-        <p>This is the <strong>Menu Page</strong> content.</p>
-    </div>
+    <main>
+        <div class="rotating-plate-container">
+            <img src="../images/plate2.jpeg" alt="Rotating Plate of Food" class="rotating-plate">
+        </div>
+
+        <div class="content">
+            <h1>Welcome to FreshBite!</h1>
+            <p>Where you can eat more and care less</p>
+            <div class="aboutUs">
+                <h2>About Us</h2>
+                <p>Welcome to FreshBite, your new home for healthy and modern cuisine, perfectly located in the heart of
+                    Rabat! We're passionate about proving that 'healthy' and 'delicious' can absolutely go hand-in-hand.
+                    We use only the freshest local Moroccan ingredients to create vibrant salads, hearty grain bowls,
+                    and refreshing juices. FreshBite is your go-to oasis for food that makes you feel as good as it
+                    tastes.</p>
+            </div>
+        </div>
+        <h1>Menu du Jour</h1>
+        <div class="menuJour">
+            <div class="card">
+                <img src="../images/diet1-removebg-preview.png" alt="" srcset="">
+                <p>Carrot Plate </p>
+            </div>
+            <div class="card">
+                <img src="../images/Food_plate_for_weight_loss-removebg-preview.png" alt="" srcset="">
+                <p>Fish Plate</p>
+            </div>
+            <div class="card">
+                <img src="../images/Salad_bowl_vegetable_plate_plant____premium_image_-removebg-preview.png" alt=""
+                    srcset="">
+                <p>Salad Plate</p>
+            </div>
+            <div class="card">
+                <img src="../images/Healthy_Keto_Dite_Food_Plate_-removebg-preview.png" alt="" srcset="">
+                <p>High Calories Plate</p>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <div id="footer">
@@ -57,6 +98,7 @@
     </div>
 
 
+    <script src="../script.js"></script>
 </body>
 
 </html>
