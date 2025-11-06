@@ -41,10 +41,40 @@
 
 
     <!-- Content -->
-    <div style="padding: 40px; max-width: 800px; margin: 20px auto; background: #fff; border-radius: 8px;">
-        <h1>Our Menu</h1>
-        <p>This is the <strong>Menu Page</strong> content.</p>
-    </div>
+    <main>
+        <div class="contact-container">
+
+            <!-- LEFT SIDE: CONTACT FORM -->
+            <div class="contact-form-wrapper">
+                <h2>Get in Touch</h2>
+                <p>Have a question or a special request? Fill out the form below and we'll get back to you!</p>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input placeholder="name..." type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input placeholder="06 XX XX XX XX" type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input placeholder="user@gmail.com" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Your Message</label>
+                        <textarea placeholder="I think ..." id="comment" name="comment" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <div class="contact-map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2477.233658162481!2d-6.821628756489389!3d34.02565622505391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1762352767862!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </main>
 
     <!-- Footer -->
     <div id="footer">
@@ -58,7 +88,6 @@
         <span class="vertical-line"></span>
         <div id="footer-end">
             <h6>Stalk Us (Politely)</h6>
-
             <i class="bi bi-facebook"> Food pics & memes</i>
             <i class="bi bi-instagram"> @fresh-bite-official</i>
             <i class="bi bi-whatsapp"> 06 06 60 00 66 (Snackmergencies)</i>
