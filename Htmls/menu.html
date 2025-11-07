@@ -18,23 +18,106 @@
 
 <body>
     <!-- Navbar -->
-    <header id="navbar-placeholder"></header>
-    <div id="nav-div">
+    <!-- Navbar -->
+    <nav class="navbar">
         <img src="../images/logo-removebg-preview.png" alt="Logo" class="logo">
-        <div id="nav-links">
-            <a class="nav-link" aria-current="page" href="home.html">Home</a>
-            <a class="nav-link" aria-current="page" href="galerie.html">Galerie</a>
-            <a class="nav-link" aria-current="page" href="menu.html">Menu</a>
-            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-        </div>
-    </div>
+        <ul id="nav-links">
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSideBar()"><img
+                    src="/images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Open menu"></li>
+        </ul>
+
+        <ul class="sideBar">
+            <li onclick="hideSideBar()"><img src="/images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="Close menu"></li>
+            <li><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+            <li><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
+            <li><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
+            <li><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
 
     <!-- Content -->
-    <div style="padding: 40px; max-width: 800px; margin: 20px auto; background: #fff; border-radius: 8px;">
-        <h1>Our Menu</h1>
-        <p>This is the <strong>Menu Page</strong> content.</p>
-    </div>
+    <main>
+        <div class="menu-container">
+            <h1 class="menu-title">Our Menu</h1>
+
+            <div class="menu-grid">
+
+                <div class="menu-card">
+                    <img src="../images/ChickenQuinoaBowl.png" alt="Quinoa Salad" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Rabat Quinoa Bowl</h3>
+                        <p class="card-ingredients">
+                            Quinoa, roasted chickpeas, avocado, cherry tomatoes, cucumber, and a lemon-tahini dressing.
+                        </p>
+                        <div class="card-price">65 MAD</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="../images/chickenWrap.png" alt="Chicken Wrap" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Atlas Chicken Wrap</h3>
+                        <p class="card-ingredients">
+                            Grilled chicken, mixed greens, bell peppers, and a light yogurt-mint sauce in a whole-wheat
+                            wrap.
+                        </p>
+                        <div class="card-price">55 MAD</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="../images/GreenJuice.png" alt="Green Juice" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Green Oasis Juice</h3>
+                        <p class="card-ingredients">
+                            Freshly pressed apple, spinach, ginger, lemon, and cucumber.
+                        </p>
+                        <div class="card-price">35 MAD</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="../images/salamon.png" alt="Salmon Bowl" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Atlantic Salmon Plate</h3>
+                        <p class="card-ingredients">
+                            Grilled salmon fillet served with steamed broccoli and a side of brown rice.
+                        </p>
+                        <div class="card-price">85 MAD</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="../images/avocadoSandwich.png" alt="Avocado Toast" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Avocado Smash Toast</h3>
+                        <p class="card-ingredients">
+                            Sourdough toast topped with fresh avocado, feta cheese, chili flakes, and a poached egg.
+                        </p>
+                        <div class="card-price">50 MAD</div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="../images/berrySmothies.png" alt="Berry Smoothie" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Berry Boost Smoothie</h3>
+                        <p class="card-ingredients">
+                            A blend of strawberries, blueberries, banana, almond milk, and a scoop of protein powder.
+                        </p>
+                        <div class="card-price">40 MAD</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <div id="footer">

@@ -18,23 +18,76 @@
 
 <body>
     <!-- Navbar -->
-    <header id="navbar-placeholder"></header>
-    <div id="nav-div">
+<!-- Navbar -->
+    <nav class="navbar">
         <img src="../images/logo-removebg-preview.png" alt="Logo" class="logo">
-        <div id="nav-links">
-            <a class="nav-link" aria-current="page" href="home.html">Home</a>
-            <a class="nav-link" aria-current="page" href="galerie.html">Galerie</a>
-            <a class="nav-link" aria-current="page" href="menu.html">Menu</a>
-            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-        </div>
-    </div>
+        <ul id="nav-links">
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
+            <li class="hideOnMobile"><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSideBar()"><img
+                    src="/images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Open menu"></li>
+        </ul>
+
+        <ul class="sideBar">
+            <li onclick="hideSideBar()"><img src="/images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="Close menu"></li>
+            <li><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+            <li><a class="nav-link" aria-current="page" href="galerie.html">Galerie</a></li>
+            <li><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
+            <li><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
 
     <!-- Content -->
-    <div style="padding: 40px; max-width: 800px; margin: 20px auto; background: #fff; border-radius: 8px;">
-        <h1>Our Menu</h1>
-        <p>This is the <strong>Menu Page</strong> content.</p>
+    <main>
+    <div class="gallery-container">
+        <h1 class="gallery-title">Our Vibe & Our Food</h1>
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="../images/15+ Inspiring Restaurant Color Ideas.jpeg" alt="A healthy food bowl">
+            </div>
+
+            <div class="gallery-item gallery-text-item">
+                <h3>Fresh & Local</h3>
+                <p>We source all our ingredients from local Moroccan farms, ensuring every bite is fresh.</p>
+            </div>
+
+            <div class="gallery-item item-tall">
+                <img src="../images/Las cubiertas de Color Stone no solo ofrecen un….jpeg" alt="The restaurant interior">
+            </div>
+
+            <div class="gallery-item item-wide">
+                <img src="../images/ART AI.jpeg" alt="A spread of healthy dishes">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/download.jpeg" alt="Freshly squeezed juices">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/Prato vazio preto e garfo e faca de talheres em um conceito de maquete de plano de fundo texturizado escuro para o design de um site de menu de restaurante ou design _ Foto Premium.jpeg" alt="A close-up of a salad">
+            </div>
+
+            <div class="gallery-item gallery-text-item item-wide">
+                <h3>Good Food, Good Mood</h3>
+                <p>Our mission is to prove that 'healthy' and 'delicious' belong in the same sentence.</p>
+            </div>
+
+            <div class="gallery-item item-tall">
+                <img src="../images/🌟 Vibrant Healthy Meal Inspiration with Fresh….jpeg" alt="The smiling staff">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/download (1).jpeg" alt="Avocado toast">
+            </div>
+
+        </div>
     </div>
+</main>
 
     <!-- Footer -->
     <div id="footer">
