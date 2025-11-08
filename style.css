@@ -529,3 +529,17 @@ body::-webkit-scrollbar {
         grid-row: span 2;
     }
 }
+.error-message {
+    color: #ffc2c2; 
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 5px;
+    display: none; 
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border: 2px solid #e74c3c; 
+    background-color: #ffe0e0; 
+    color: #333; 
+}
